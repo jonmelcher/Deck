@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  deck:
+    image: jonmelcher/deck:latest
+    ports:
+      - 8080:8080
+    depends_on:
+      - redis
+  redis:
+    image: redis:latest
+
