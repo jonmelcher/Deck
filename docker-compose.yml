@@ -2,6 +2,8 @@ version: '3'
 
 services:
   deck:
+    # docker build -t jonmelcher/deck .
+    # docker-compose -f docker-compose.yml up
     image: jonmelcher/deck:latest
     ports:
       - 8080:8080
